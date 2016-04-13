@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  LayerControllerViewController.h
 //  LearnProjects
 //
 //  Created by yaoln on 16/4/13.
@@ -7,10 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "Setting.h"
 
-@interface ViewController : UIViewController
-
+@interface LayerControllerViewController : UIViewController
 
 @end
-
