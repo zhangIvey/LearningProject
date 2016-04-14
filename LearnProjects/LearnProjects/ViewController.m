@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "LayerControllerViewController.h"
 
 @interface ViewController () <UITableViewDelegate, UITableViewDataSource>
 {
@@ -52,7 +53,8 @@
 {
     if (indexPath.row == 0) {
         NSLog(@"Layer");
-        
+        LayerControllerViewController *layerViewController = [[LayerControllerViewController alloc] init];
+        [self.navigationController pushViewController:layerViewController animated:YES];
     }
 }
 

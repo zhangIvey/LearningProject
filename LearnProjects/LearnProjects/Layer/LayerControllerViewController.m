@@ -17,11 +17,29 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.view.backgroundColor = [UIColor blueColor];
+    [self createLayers];
 }
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - create layer
+- (void)createLayers
+{
+    CALayer *layer1 = [CALayer layer];
+    layer1.bounds = CGRectMake(100, 100, 100, 100);
+    layer1.position = CGPointMake(ScreenWidth/2, ScreenHeight/2);
+    layer1.borderColor = [UIColor whiteColor].CGColor;
+    layer1.borderWidth = 10;
+    layer1.backgroundColor = [UIColor redColor].CGColor;
+    [self.view.layer addSublayer:layer1];
+    
+    
+    
 }
 
 /*

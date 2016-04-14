@@ -8,6 +8,24 @@
 
 #import "K_layer.h"
 
+@interface K_layer ()
+
+
+@end
+
 @implementation K_layer
+{
+    CGFloat *width;
+    CGFloat *height;
+    CGColorRef *color;
+}
+
+
+- (void)display
+{
+    
+}
+
+
 
 @end
