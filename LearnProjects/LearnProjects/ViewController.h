@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Setting.h"
+@class LayerControllerViewController;
 
 @interface ViewController : UIViewController
 

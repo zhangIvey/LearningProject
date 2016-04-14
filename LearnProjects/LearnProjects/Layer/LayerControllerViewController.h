@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  LayerControllerViewController.h
 //  LearnProjects
 //
 //  Created by yaoln on 16/4/13.
@@ -9,10 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "Setting.h"
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
-
+@interface LayerControllerViewController : UIViewController
 
 @end
-

@@ -13,6 +13,8 @@
 		75ACA20D1CBDF77400550078 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75ACA20B1CBDF77400550078 /* Main.storyboard */; };
 		75ACA20F1CBDF77400550078 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75ACA20E1CBDF77400550078 /* Assets.xcassets */; };
 		75ACA2121CBDF77400550078 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75ACA2101CBDF77400550078 /* LaunchScreen.storyboard */; };
+		75ACA21D1CBE239400550078 /* LayerControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75ACA21C1CBE239400550078 /* LayerControllerViewController.m */; };
+		75ACA2201CBE23C800550078 /* K_layer.m in Sources */ = {isa = PBXBuildFile; fileRef = 75ACA21F1CBE23C800550078 /* K_layer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,11 @@
 		75ACA20E1CBDF77400550078 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		75ACA2111CBDF77400550078 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		75ACA2131CBDF77400550078 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75ACA2191CBE1CA200550078 /* Setting.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Setting.h; sourceTree = "<group>"; };
+		75ACA21B1CBE239400550078 /* LayerControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LayerControllerViewController.h; path = Layer/LayerControllerViewController.h; sourceTree = "<group>"; };
+		75ACA21C1CBE239400550078 /* LayerControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LayerControllerViewController.m; path = Layer/LayerControllerViewController.m; sourceTree = "<group>"; };
+		75ACA21E1CBE23C800550078 /* K_layer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = K_layer.h; path = Layer/K_layer.h; sourceTree = "<group>"; };
+		75ACA21F1CBE23C800550078 /* K_layer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = K_layer.m; path = Layer/K_layer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +65,7 @@
 		75ACA2011CBDF77400550078 /* LearnProjects */ = {
 			isa = PBXGroup;
 			children = (
+				75ACA21A1CBE235C00550078 /* Layer */,
 				75ACA2051CBDF77400550078 /* AppDelegate.h */,
 				75ACA2061CBDF77400550078 /* AppDelegate.m */,
 				75ACA2081CBDF77400550078 /* ViewController.h */,
@@ -67,6 +75,7 @@
 				75ACA2101CBDF77400550078 /* LaunchScreen.storyboard */,
 				75ACA2131CBDF77400550078 /* Info.plist */,
 				75ACA2021CBDF77400550078 /* Supporting Files */,
+				75ACA2191CBE1CA200550078 /* Setting.h */,
 			);
 			path = LearnProjects;
 			sourceTree = "<group>";
@@ -77,6 +86,17 @@
 				75ACA2031CBDF77400550078 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		75ACA21A1CBE235C00550078 /* Layer */ = {
+			isa = PBXGroup;
+			children = (
+				75ACA21B1CBE239400550078 /* LayerControllerViewController.h */,
+				75ACA21C1CBE239400550078 /* LayerControllerViewController.m */,
+				75ACA21E1CBE23C800550078 /* K_layer.h */,
+				75ACA21F1CBE23C800550078 /* K_layer.m */,
+			);
+			name = Layer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +171,8 @@
 			files = (
 				75ACA20A1CBDF77400550078 /* ViewController.m in Sources */,
 				75ACA2071CBDF77400550078 /* AppDelegate.m in Sources */,
+				75ACA21D1CBE239400550078 /* LayerControllerViewController.m in Sources */,
+				75ACA2201CBE23C800550078 /* K_layer.m in Sources */,
 				75ACA2041CBDF77400550078 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -300,6 +322,7 @@
 				75ACA2181CBDF77400550078 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
