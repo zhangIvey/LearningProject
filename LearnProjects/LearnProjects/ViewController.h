@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "Setting.h"
 @class LayerControllerViewController;
+@class DrawImageLayer;
+@class QuartzViewController;
 
 @interface ViewController : UIViewController
 

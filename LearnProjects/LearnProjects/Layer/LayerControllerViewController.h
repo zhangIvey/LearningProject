@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "Setting.h"
+#import <QuartzCore/CALayer.h>
 
 @interface LayerControllerViewController : UIViewController
 

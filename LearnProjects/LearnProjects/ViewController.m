@@ -8,6 +8,9 @@
 
 #import "ViewController.h"
 #import "LayerControllerViewController.h"
+#import "DrawImageLayer.h"
+#import "QuartzViewController.h"
+
 
 @interface ViewController () <UITableViewDelegate, UITableViewDataSource>
 {
@@ -24,7 +27,7 @@
 {
     [super loadView];
     
-    _optionsArray = [[NSArray alloc] initWithObjects:@"Layer", nil];
+    _optionsArray = [[NSArray alloc] initWithObjects:@"Layer",@"Layer2",@"Quartz 2D", nil];
     _optionsTableView = [[UITableView alloc] init];
     _optionsTableView.backgroundColor = [UIColor yellowColor];
     _optionsTableView.frame = CGRectMake(0, 0,ScreenWidth, ScreenHeight);
@@ -55,6 +58,14 @@
         NSLog(@"Layer");
         LayerControllerViewController *layerViewController = [[LayerControllerViewController alloc] init];
         [self.navigationController pushViewController:layerViewController animated:YES];
+    }else if (indexPath.row == 1)
+    {
+        DrawImageLayer *layerController = [[DrawImageLayer alloc] init];
+        [self.navigationController pushViewController:layerController animated:YES];
+    }else if (indexPath.row == 2)
+    {
+        QuartzViewController *viewController = [[QuartzViewController alloc] init];
+        [self.navigationController pushViewController:viewController animated:YES];
     }
 }
 

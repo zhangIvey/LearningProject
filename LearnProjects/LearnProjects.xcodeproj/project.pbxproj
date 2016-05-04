@@ -15,6 +15,11 @@
 		75ACA2121CBDF77400550078 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75ACA2101CBDF77400550078 /* LaunchScreen.storyboard */; };
 		75ACA21D1CBE239400550078 /* LayerControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75ACA21C1CBE239400550078 /* LayerControllerViewController.m */; };
 		75ACA2201CBE23C800550078 /* K_layer.m in Sources */ = {isa = PBXBuildFile; fileRef = 75ACA21F1CBE23C800550078 /* K_layer.m */; };
+		75EB3CED1CD1B7B800F69A53 /* ShowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 75EB3CEC1CD1B7B800F69A53 /* ShowView.m */; };
+		75EB3CEF1CD1B85300F69A53 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75EB3CEE1CD1B85300F69A53 /* QuartzCore.framework */; };
+		75EB3CFE1CD9A39D00F69A53 /* DrawImageLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 75EB3CFD1CD9A39D00F69A53 /* DrawImageLayer.m */; };
+		75EB3D011CD9C53500F69A53 /* QuartzViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75EB3D001CD9C53500F69A53 /* QuartzViewController.m */; };
+		75EB3D031CD9EB9800F69A53 /* timg.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 75EB3D021CD9EB9800F69A53 /* timg.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +38,14 @@
 		75ACA21C1CBE239400550078 /* LayerControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LayerControllerViewController.m; path = Layer/LayerControllerViewController.m; sourceTree = "<group>"; };
 		75ACA21E1CBE23C800550078 /* K_layer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = K_layer.h; path = Layer/K_layer.h; sourceTree = "<group>"; };
 		75ACA21F1CBE23C800550078 /* K_layer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = K_layer.m; path = Layer/K_layer.m; sourceTree = "<group>"; };
+		75EB3CEB1CD1B7B800F69A53 /* ShowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShowView.h; path = Layer/ShowView.h; sourceTree = "<group>"; };
+		75EB3CEC1CD1B7B800F69A53 /* ShowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ShowView.m; path = Layer/ShowView.m; sourceTree = "<group>"; };
+		75EB3CEE1CD1B85300F69A53 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		75EB3CFC1CD9A39D00F69A53 /* DrawImageLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawImageLayer.h; sourceTree = "<group>"; };
+		75EB3CFD1CD9A39D00F69A53 /* DrawImageLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawImageLayer.m; sourceTree = "<group>"; };
+		75EB3CFF1CD9C53500F69A53 /* QuartzViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QuartzViewController.h; path = Layer/QuartzViewController.h; sourceTree = "<group>"; };
+		75EB3D001CD9C53500F69A53 /* QuartzViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QuartzViewController.m; path = Layer/QuartzViewController.m; sourceTree = "<group>"; };
+		75EB3D021CD9EB9800F69A53 /* timg.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = timg.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75EB3CEF1CD1B85300F69A53 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -49,6 +63,7 @@
 		75ACA1F61CBDF77400550078 = {
 			isa = PBXGroup;
 			children = (
+				75EB3CEE1CD1B85300F69A53 /* QuartzCore.framework */,
 				75ACA2011CBDF77400550078 /* LearnProjects */,
 				75ACA2001CBDF77400550078 /* Products */,
 			);
@@ -91,10 +106,17 @@
 		75ACA21A1CBE235C00550078 /* Layer */ = {
 			isa = PBXGroup;
 			children = (
+				75EB3D021CD9EB9800F69A53 /* timg.jpeg */,
 				75ACA21B1CBE239400550078 /* LayerControllerViewController.h */,
 				75ACA21C1CBE239400550078 /* LayerControllerViewController.m */,
 				75ACA21E1CBE23C800550078 /* K_layer.h */,
 				75ACA21F1CBE23C800550078 /* K_layer.m */,
+				75EB3CEB1CD1B7B800F69A53 /* ShowView.h */,
+				75EB3CEC1CD1B7B800F69A53 /* ShowView.m */,
+				75EB3CFC1CD9A39D00F69A53 /* DrawImageLayer.h */,
+				75EB3CFD1CD9A39D00F69A53 /* DrawImageLayer.m */,
+				75EB3CFF1CD9C53500F69A53 /* QuartzViewController.h */,
+				75EB3D001CD9C53500F69A53 /* QuartzViewController.m */,
 			);
 			name = Layer;
 			sourceTree = "<group>";
@@ -158,6 +180,7 @@
 			files = (
 				75ACA2121CBDF77400550078 /* LaunchScreen.storyboard in Resources */,
 				75ACA20F1CBDF77400550078 /* Assets.xcassets in Resources */,
+				75EB3D031CD9EB9800F69A53 /* timg.jpeg in Resources */,
 				75ACA20D1CBDF77400550078 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -174,6 +197,9 @@
 				75ACA21D1CBE239400550078 /* LayerControllerViewController.m in Sources */,
 				75ACA2201CBE23C800550078 /* K_layer.m in Sources */,
 				75ACA2041CBDF77400550078 /* main.m in Sources */,
+				75EB3CFE1CD9A39D00F69A53 /* DrawImageLayer.m in Sources */,
+				75EB3CED1CD1B7B800F69A53 /* ShowView.m in Sources */,
+				75EB3D011CD9C53500F69A53 /* QuartzViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
