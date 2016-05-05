@@ -210,12 +210,135 @@
     
 //    [image drawInRect:CGRectMake(100, 100, 200, 200)];
 //    [image drawAtPoint:CGPointMake(0, 0)];
-    [image drawAsPatternInRect:CGRectMake(100, 100, 200, 200)];
+    [image drawAsPatternInRect:CGRectMake(100, 100, 200, 200)];//平铺的图片
 }
+
+
+#pragma mark - 线性渐变
+- (void)drawLinearGradient
+{
+    CGContextRef context =  UIGraphicsGetCurrentContext();
+    // 1 ：创建颜色空间
+    CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
+    /*指定渐变色
+     space:颜色空间
+     components:颜色数组,注意由于指定了RGB颜色空间，那么四个数组元素表示一个颜色（red、green、blue、alpha），
+     如果有三个颜色则这个数组有4*3个元素
+     locations:颜色所在位置（范围0~1），这个数组的个数不小于components中存放颜色的个数
+     count:渐变个数，等于locations的个数
+     */
+    
+    //创建色值数组
+    CGFloat components[] = {
+        248.0/255.0,86.0/255.0,86.0/255.0,1,
+        15.0/255.0,127.0/255.0,127.0/255.0,1,
+        1.0,1.0,1.0,1.0
+    };
+    CGFloat locations[] = {
+        0, 0.5, 1
+    };
+    
+    
+    // 2 ：创建一个渐变对象(一个颜色渐变的坡度)
+    CGGradientRef gradient = CGGradientCreateWithColorComponents(colorSpace, components, locations, 3);
+    
+    // 3 ：开始绘制渐变颜色
+    /*绘制线性渐变
+     context:图形上下文
+     gradient:渐变色
+     startPoint:起始位置
+     endPoint:终止位置
+     options:绘制方式,kCGGradientDrawsBeforeStartLocation 开始位置之前就进行绘制，到结束位置之后不再绘制，
+     kCGGradientDrawsAfterEndLocation开始位置之前不进行绘制，到结束点之后继续填充
+     */
+    
+    CGContextDrawLinearGradient(context, gradient, CGPointZero, CGPointMake(320, 100), kCGGradientDrawsAfterEndLocation);
+
+    
+    
+}
+
+#pragma mark - 径向渐变
+- (void)drawRadiaGradient
+{
+    //1 ： 获取图形上下文
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    
+    //2 ： 创建颜色空间
+    CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
+    
+    //3 : 设置绘图属性,创建一个渐变区域
+    /*指定渐变色
+     space:颜色空间
+     components:颜色数组,注意由于指定了RGB颜色空间，那么四个数组元素表示一个颜色（red、green、blue、alpha），
+     如果有三个颜色则这个数组有4*3个元素
+     locations:颜色所在位置（范围0~1），这个数组的个数不小于components中存放颜色的个数
+     count:渐变个数，等于locations的个数
+     */
+    CGFloat components[] = {
+        248.0/255.0,86.0/255.0,86.0/255.0,1,
+        15.0/255.0,127.0/255.0,127.0/255.0,1,
+        1.0,1.0,1.0,1.0
+    };
+    CGFloat locations[] = {
+        0, 0.5, 1
+    };
+    CGGradientRef gradient = CGGradientCreateWithColorComponents(colorSpace, components, locations, 3);
+    
+    //4 ： 绘制渐变
+    /*绘制径向渐变
+     context:图形上下文
+     gradient:渐变色
+     startCenter:起始点位置
+     startRadius:起始半径（通常为0，否则在此半径范围内容无任何填充）
+     endCenter:终点位置（通常和起始点相同，否则会有偏移）
+     endRadius:终点半径（也就是渐变的扩散长度）
+     options:绘制方式,kCGGradientDrawsBeforeStartLocation 开始位置之前就进行绘制，但是到结束位置之后不再绘制，
+     kCGGradientDrawsAfterEndLocation开始位置之前不进行绘制，但到结束点之后继续填充
+     */
+    CGPoint startCenter = CGPointMake(100, 160);
+    CGPoint endCenter = CGPointMake(200, 250);
+    CGFloat startRadius = 100;
+    CGFloat endRadius = 50;
+    
+    CGContextDrawRadialGradient(context, gradient, startCenter, startRadius, endCenter, endRadius, kCGGradientDrawsAfterEndLocation);
+    
+    
+    
+}
+
+#pragma mark - 渐变填充
+- (void)drawRectFillWithGradient
+{
+    //获取图形上下文
+    CGContextRef context = UIGraphicsGetCurrentContext();
+
+    //裁剪制定的区域，然后再进行填充
+    CGContextClipToRect(context, CGRectMake(20, 50, 280, 300));
+    
+    //开始颜色的填充
+    //创建颜色空间
+    CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
+    //创建色值
+    CGFloat compents[] = {
+        248.0/255.0,86.0/255.0,86.0/255.0,1,
+        249.0/255.0,127.0/255.0,127.0/255.0,1,
+        1.0,1.0,1.0,1.0
+    };
+    //创建渐变的点
+    CGFloat locations[] = {
+        0, 0.5,1
+    };
+    //创建渐变的坡度
+    CGGradientRef gradient = CGGradientCreateWithColorComponents(colorSpace, compents, locations, 3);
+    //进行绘制渐变色
+    CGContextDrawLinearGradient(context, gradient, CGPointMake(20, 50), CGPointMake(300, 300), kCGGradientDrawsBeforeStartLocation);
+}
+
 
 - (void)drawRect:(CGRect)rect {
     // Drawing code
-    [self drawImage];
+    [self drawRectFillWithGradient];
 }
 
 
