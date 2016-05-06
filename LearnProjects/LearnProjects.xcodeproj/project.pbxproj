@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7522D23E1CDC781400A056DE /* ChangeingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7522D23D1CDC781400A056DE /* ChangeingViewController.m */; };
+		7522D2411CDC783A00A056DE /* TextVIew.m in Sources */ = {isa = PBXBuildFile; fileRef = 7522D2401CDC783A00A056DE /* TextVIew.m */; };
 		75ACA2041CBDF77400550078 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 75ACA2031CBDF77400550078 /* main.m */; };
 		75ACA2071CBDF77400550078 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 75ACA2061CBDF77400550078 /* AppDelegate.m */; };
 		75ACA20A1CBDF77400550078 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75ACA2091CBDF77400550078 /* ViewController.m */; };
@@ -23,6 +25,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7522D23C1CDC781400A056DE /* ChangeingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangeingViewController.h; sourceTree = "<group>"; };
+		7522D23D1CDC781400A056DE /* ChangeingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangeingViewController.m; sourceTree = "<group>"; };
+		7522D23F1CDC783A00A056DE /* TextVIew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextVIew.h; sourceTree = "<group>"; };
+		7522D2401CDC783A00A056DE /* TextVIew.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextVIew.m; sourceTree = "<group>"; };
 		75ACA1FF1CBDF77400550078 /* LearnProjects.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnProjects.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75ACA2031CBDF77400550078 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		75ACA2051CBDF77400550078 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -91,6 +97,10 @@
 				75ACA2131CBDF77400550078 /* Info.plist */,
 				75ACA2021CBDF77400550078 /* Supporting Files */,
 				75ACA2191CBE1CA200550078 /* Setting.h */,
+				7522D23C1CDC781400A056DE /* ChangeingViewController.h */,
+				7522D23D1CDC781400A056DE /* ChangeingViewController.m */,
+				7522D23F1CDC783A00A056DE /* TextVIew.h */,
+				7522D2401CDC783A00A056DE /* TextVIew.m */,
 			);
 			path = LearnProjects;
 			sourceTree = "<group>";
@@ -193,10 +203,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				75ACA20A1CBDF77400550078 /* ViewController.m in Sources */,
+				7522D2411CDC783A00A056DE /* TextVIew.m in Sources */,
 				75ACA2071CBDF77400550078 /* AppDelegate.m in Sources */,
 				75ACA21D1CBE239400550078 /* LayerControllerViewController.m in Sources */,
 				75ACA2201CBE23C800550078 /* K_layer.m in Sources */,
 				75ACA2041CBDF77400550078 /* main.m in Sources */,
+				7522D23E1CDC781400A056DE /* ChangeingViewController.m in Sources */,
 				75EB3CFE1CD9A39D00F69A53 /* DrawImageLayer.m in Sources */,
 				75EB3CED1CD1B7B800F69A53 /* ShowView.m in Sources */,
 				75EB3D011CD9C53500F69A53 /* QuartzViewController.m in Sources */,

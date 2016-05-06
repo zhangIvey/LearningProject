@@ -11,6 +11,7 @@
 @class LayerControllerViewController;
 @class DrawImageLayer;
 @class QuartzViewController;
+@class ChangeingViewController;
 
 @interface ViewController : UIViewController
 

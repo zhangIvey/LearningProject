@@ -10,7 +10,7 @@
 #import "LayerControllerViewController.h"
 #import "DrawImageLayer.h"
 #import "QuartzViewController.h"
-
+#import "ChangeingViewController.h"
 
 @interface ViewController () <UITableViewDelegate, UITableViewDataSource>
 {
@@ -27,7 +27,7 @@
 {
     [super loadView];
     
-    _optionsArray = [[NSArray alloc] initWithObjects:@"Layer",@"Layer2",@"Quartz 2D", nil];
+    _optionsArray = [[NSArray alloc] initWithObjects:@"Layer",@"Layer2",@"Quartz 2D",@"视图的实时变化", nil];
     _optionsTableView = [[UITableView alloc] init];
     _optionsTableView.backgroundColor = [UIColor yellowColor];
     _optionsTableView.frame = CGRectMake(0, 0,ScreenWidth, ScreenHeight);
@@ -65,6 +65,9 @@
     }else if (indexPath.row == 2)
     {
         QuartzViewController *viewController = [[QuartzViewController alloc] init];
+        [self.navigationController pushViewController:viewController animated:YES];
+    }else if (indexPath.row == 3){
+        ChangeingViewController *viewController = [[ChangeingViewController alloc] init];
         [self.navigationController pushViewController:viewController animated:YES];
     }
 }
