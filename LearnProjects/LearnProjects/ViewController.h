@@ -14,6 +14,7 @@
 @class ChangeingViewController;
 @class watermarkViewController;
 @class ProducePDFViewController;
+@class CoreImageViewController;
 
 @interface ViewController : UIViewController
 

@@ -13,6 +13,7 @@
 #import "ChangeingViewController.h"
 #import "watermarkViewController.h"
 #import "ProducePDFViewController.h"
+#import "CoreImageViewController.h"
 
 @interface ViewController () <UITableViewDelegate, UITableViewDataSource>
 {
@@ -29,7 +30,7 @@
 {
     [super loadView];
     
-    _optionsArray = [[NSArray alloc] initWithObjects:@"Layer",@"Layer2",@"Quartz 2D",@"视图的实时变化",@"位图上添加水印",@"绘制生成PDF", nil];
+    _optionsArray = [[NSArray alloc] initWithObjects:@"Layer",@"Layer2",@"Quartz 2D",@"视图的实时变化",@"位图上添加水印",@"绘制生成PDF",@"图片的滤镜功能", nil];
     _optionsTableView = [[UITableView alloc] init];
     _optionsTableView.backgroundColor = [UIColor yellowColor];
     _optionsTableView.frame = CGRectMake(0, 0,ScreenWidth, ScreenHeight);
@@ -77,6 +78,9 @@
     }else if (indexPath.row == 5){
         ProducePDFViewController *pdfViewController = [[ProducePDFViewController alloc] init];
         [self.navigationController pushViewController:pdfViewController animated:YES];
+    }else if (indexPath.row == 6){
+        CoreImageViewController *imageViewController = [[CoreImageViewController alloc] init];
+        [self.navigationController pushViewController:imageViewController animated:YES];
     }
     
 }
