@@ -17,6 +17,8 @@
 		75ACA2121CBDF77400550078 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75ACA2101CBDF77400550078 /* LaunchScreen.storyboard */; };
 		75ACA21D1CBE239400550078 /* LayerControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75ACA21C1CBE239400550078 /* LayerControllerViewController.m */; };
 		75ACA2201CBE23C800550078 /* K_layer.m in Sources */ = {isa = PBXBuildFile; fileRef = 75ACA21F1CBE23C800550078 /* K_layer.m */; };
+		75BF01401CE036260062BF3C /* watermarkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75BF013F1CE036260062BF3C /* watermarkViewController.m */; };
+		75BF01461CE05C9C0062BF3C /* ProducePDFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75BF01451CE05C9C0062BF3C /* ProducePDFViewController.m */; };
 		75EB3CED1CD1B7B800F69A53 /* ShowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 75EB3CEC1CD1B7B800F69A53 /* ShowView.m */; };
 		75EB3CEF1CD1B85300F69A53 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75EB3CEE1CD1B85300F69A53 /* QuartzCore.framework */; };
 		75EB3CFE1CD9A39D00F69A53 /* DrawImageLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 75EB3CFD1CD9A39D00F69A53 /* DrawImageLayer.m */; };
@@ -44,6 +46,10 @@
 		75ACA21C1CBE239400550078 /* LayerControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LayerControllerViewController.m; path = Layer/LayerControllerViewController.m; sourceTree = "<group>"; };
 		75ACA21E1CBE23C800550078 /* K_layer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = K_layer.h; path = Layer/K_layer.h; sourceTree = "<group>"; };
 		75ACA21F1CBE23C800550078 /* K_layer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = K_layer.m; path = Layer/K_layer.m; sourceTree = "<group>"; };
+		75BF013E1CE036260062BF3C /* watermarkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = watermarkViewController.h; sourceTree = "<group>"; };
+		75BF013F1CE036260062BF3C /* watermarkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = watermarkViewController.m; sourceTree = "<group>"; };
+		75BF01441CE05C9C0062BF3C /* ProducePDFViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProducePDFViewController.h; path = Layer/ProducePDFViewController.h; sourceTree = "<group>"; };
+		75BF01451CE05C9C0062BF3C /* ProducePDFViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProducePDFViewController.m; path = Layer/ProducePDFViewController.m; sourceTree = "<group>"; };
 		75EB3CEB1CD1B7B800F69A53 /* ShowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShowView.h; path = Layer/ShowView.h; sourceTree = "<group>"; };
 		75EB3CEC1CD1B7B800F69A53 /* ShowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ShowView.m; path = Layer/ShowView.m; sourceTree = "<group>"; };
 		75EB3CEE1CD1B85300F69A53 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -127,6 +133,10 @@
 				75EB3CFD1CD9A39D00F69A53 /* DrawImageLayer.m */,
 				75EB3CFF1CD9C53500F69A53 /* QuartzViewController.h */,
 				75EB3D001CD9C53500F69A53 /* QuartzViewController.m */,
+				75BF013E1CE036260062BF3C /* watermarkViewController.h */,
+				75BF013F1CE036260062BF3C /* watermarkViewController.m */,
+				75BF01441CE05C9C0062BF3C /* ProducePDFViewController.h */,
+				75BF01451CE05C9C0062BF3C /* ProducePDFViewController.m */,
 			);
 			name = Layer;
 			sourceTree = "<group>";
@@ -206,9 +216,11 @@
 				7522D2411CDC783A00A056DE /* TextVIew.m in Sources */,
 				75ACA2071CBDF77400550078 /* AppDelegate.m in Sources */,
 				75ACA21D1CBE239400550078 /* LayerControllerViewController.m in Sources */,
+				75BF01401CE036260062BF3C /* watermarkViewController.m in Sources */,
 				75ACA2201CBE23C800550078 /* K_layer.m in Sources */,
 				75ACA2041CBDF77400550078 /* main.m in Sources */,
 				7522D23E1CDC781400A056DE /* ChangeingViewController.m in Sources */,
+				75BF01461CE05C9C0062BF3C /* ProducePDFViewController.m in Sources */,
 				75EB3CFE1CD9A39D00F69A53 /* DrawImageLayer.m in Sources */,
 				75EB3CED1CD1B7B800F69A53 /* ShowView.m in Sources */,
 				75EB3D011CD9C53500F69A53 /* QuartzViewController.m in Sources */,

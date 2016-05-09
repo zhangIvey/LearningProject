@@ -12,6 +12,8 @@
 @class DrawImageLayer;
 @class QuartzViewController;
 @class ChangeingViewController;
+@class watermarkViewController;
+@class ProducePDFViewController;
 
 @interface ViewController : UIViewController
 
