@@ -9,6 +9,13 @@
 #import <UIKit/UIKit.h>
 #import "Setting.h"
 @class LayerControllerViewController;
+@class DrawImageLayer;
+@class QuartzViewController;
+@class ChangeingViewController;
+@class watermarkViewController;
+@class ProducePDFViewController;
+@class CoreImageViewController;
+@class KCMainViewController;
 
 @interface ViewController : UIViewController
 
