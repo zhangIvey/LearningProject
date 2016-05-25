@@ -28,6 +28,24 @@
 #pragma mark - create layer
 - (void)createLayer
 {
+    CGPoint position= CGPointMake(160, 200);
+    CGRect bounds=CGRectMake(0, 0, PHOTO_HEIGHT, PHOTO_HEIGHT);
+    CGFloat cornerRadius=PHOTO_HEIGHT/2;
+    CGFloat borderWidth=2;
+    
+    //创建阴影层
+    CALayer *layerShadow=[[CALayer alloc]init];
+    layerShadow.bounds=bounds;
+    layerShadow.position=position;
+    layerShadow.cornerRadius=cornerRadius;
+    layerShadow.shadowColor=[UIColor grayColor].CGColor;
+    layerShadow.shadowOffset=CGSizeMake(2, 1);
+    layerShadow.shadowOpacity=1;
+    layerShadow.borderColor=[UIColor whiteColor].CGColor;
+    layerShadow.borderWidth=borderWidth;
+    [self.view.layer addSublayer:layerShadow];
+    
+    //图像层
     CALayer *layer = [[CALayer alloc] init];
     //设置层大小
     layer.bounds = CGRectMake(0, 0, 150, 150);
@@ -51,6 +69,13 @@
     //设置阴影透明度
     layer.shadowOpacity = 1;
     
+    layer.transform=CATransform3DMakeRotation(M_PI, 1, 0, 0);
+    
+    /*
+    UIImage *image=[UIImage imageNamed:@"timg.jpeg"];
+     [layer setContents:(id)image.CGImage];
+     */
+    
     [self.view.layer addSublayer:layer];
     
     //设置图层的代理
@@ -68,8 +93,8 @@
     CGContextSaveGState(ctx);
     
     //图形上下文形变，解决图片倒立的问题
-    CGContextScaleCTM(ctx, 1, -1);
-    CGContextTranslateCTM(ctx, 0, -PHOTO_HEIGHT);
+//    CGContextScaleCTM(ctx, 1, -1);
+//    CGContextTranslateCTM(ctx, 0, -PHOTO_HEIGHT);
     
     UIImage *image=[UIImage imageNamed:@"timg.jpeg"];
     //注意这个位置是相对于图层而言的不是屏幕
@@ -77,7 +102,7 @@
     
     //    CGContextFillRect(ctx, CGRectMake(0, 0, 100, 100));
     //    CGContextDrawPath(ctx, kCGPathFillStroke);
-    
+//    [layer setValue:@M_PI forKeyPath:@"transform.rotation.x"];
     CGContextRestoreGState(ctx);
 }
 

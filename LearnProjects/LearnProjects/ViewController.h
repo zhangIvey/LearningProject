@@ -15,6 +15,7 @@
 @class watermarkViewController;
 @class ProducePDFViewController;
 @class CoreImageViewController;
+@class KCMainViewController;
 
 @interface ViewController : UIViewController
 

@@ -20,6 +20,10 @@
 		75BF01401CE036260062BF3C /* watermarkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75BF013F1CE036260062BF3C /* watermarkViewController.m */; };
 		75BF01461CE05C9C0062BF3C /* ProducePDFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75BF01451CE05C9C0062BF3C /* ProducePDFViewController.m */; };
 		75BF01491CE0634B0062BF3C /* CoreImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75BF01481CE0634B0062BF3C /* CoreImageViewController.m */; };
+		75BF01521CE1AEA20062BF3C /* Kview.m in Sources */ = {isa = PBXBuildFile; fileRef = 75BF01511CE1AEA20062BF3C /* Kview.m */; };
+		75BF01551CE1AF170062BF3C /* KCMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75BF01541CE1AF170062BF3C /* KCMainViewController.m */; };
+		75BF01581CE1BBEA0062BF3C /* CoreAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75BF01571CE1BBEA0062BF3C /* CoreAnimationViewController.m */; };
+		75BF015A1CE1BC430062BF3C /* flower.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 75BF01591CE1BC430062BF3C /* flower.jpg */; };
 		75EB3CED1CD1B7B800F69A53 /* ShowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 75EB3CEC1CD1B7B800F69A53 /* ShowView.m */; };
 		75EB3CEF1CD1B85300F69A53 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75EB3CEE1CD1B85300F69A53 /* QuartzCore.framework */; };
 		75EB3CFE1CD9A39D00F69A53 /* DrawImageLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 75EB3CFD1CD9A39D00F69A53 /* DrawImageLayer.m */; };
@@ -53,6 +57,13 @@
 		75BF01451CE05C9C0062BF3C /* ProducePDFViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProducePDFViewController.m; path = Layer/ProducePDFViewController.m; sourceTree = "<group>"; };
 		75BF01471CE0634B0062BF3C /* CoreImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreImageViewController.h; sourceTree = "<group>"; };
 		75BF01481CE0634B0062BF3C /* CoreImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreImageViewController.m; sourceTree = "<group>"; };
+		75BF01501CE1AEA20062BF3C /* Kview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Kview.h; sourceTree = "<group>"; };
+		75BF01511CE1AEA20062BF3C /* Kview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Kview.m; sourceTree = "<group>"; };
+		75BF01531CE1AF170062BF3C /* KCMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCMainViewController.h; sourceTree = "<group>"; };
+		75BF01541CE1AF170062BF3C /* KCMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCMainViewController.m; sourceTree = "<group>"; };
+		75BF01561CE1BBEA0062BF3C /* CoreAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreAnimationViewController.h; sourceTree = "<group>"; };
+		75BF01571CE1BBEA0062BF3C /* CoreAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreAnimationViewController.m; sourceTree = "<group>"; };
+		75BF01591CE1BC430062BF3C /* flower.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = flower.jpg; sourceTree = "<group>"; };
 		75EB3CEB1CD1B7B800F69A53 /* ShowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShowView.h; path = Layer/ShowView.h; sourceTree = "<group>"; };
 		75EB3CEC1CD1B7B800F69A53 /* ShowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ShowView.m; path = Layer/ShowView.m; sourceTree = "<group>"; };
 		75EB3CEE1CD1B85300F69A53 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -125,6 +136,7 @@
 		75ACA21A1CBE235C00550078 /* Layer */ = {
 			isa = PBXGroup;
 			children = (
+				75BF01591CE1BC430062BF3C /* flower.jpg */,
 				75EB3D021CD9EB9800F69A53 /* timg.jpeg */,
 				75ACA21B1CBE239400550078 /* LayerControllerViewController.h */,
 				75ACA21C1CBE239400550078 /* LayerControllerViewController.m */,
@@ -142,6 +154,12 @@
 				75BF01451CE05C9C0062BF3C /* ProducePDFViewController.m */,
 				75BF01471CE0634B0062BF3C /* CoreImageViewController.h */,
 				75BF01481CE0634B0062BF3C /* CoreImageViewController.m */,
+				75BF01501CE1AEA20062BF3C /* Kview.h */,
+				75BF01511CE1AEA20062BF3C /* Kview.m */,
+				75BF01531CE1AF170062BF3C /* KCMainViewController.h */,
+				75BF01541CE1AF170062BF3C /* KCMainViewController.m */,
+				75BF01561CE1BBEA0062BF3C /* CoreAnimationViewController.h */,
+				75BF01571CE1BBEA0062BF3C /* CoreAnimationViewController.m */,
 			);
 			name = Layer;
 			sourceTree = "<group>";
@@ -205,6 +223,7 @@
 			files = (
 				75ACA2121CBDF77400550078 /* LaunchScreen.storyboard in Resources */,
 				75ACA20F1CBDF77400550078 /* Assets.xcassets in Resources */,
+				75BF015A1CE1BC430062BF3C /* flower.jpg in Resources */,
 				75EB3D031CD9EB9800F69A53 /* timg.jpeg in Resources */,
 				75ACA20D1CBDF77400550078 /* Main.storyboard in Resources */,
 			);
@@ -217,12 +236,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75BF01581CE1BBEA0062BF3C /* CoreAnimationViewController.m in Sources */,
 				75ACA20A1CBDF77400550078 /* ViewController.m in Sources */,
 				7522D2411CDC783A00A056DE /* TextVIew.m in Sources */,
+				75BF01551CE1AF170062BF3C /* KCMainViewController.m in Sources */,
 				75ACA2071CBDF77400550078 /* AppDelegate.m in Sources */,
 				75ACA21D1CBE239400550078 /* LayerControllerViewController.m in Sources */,
 				75BF01401CE036260062BF3C /* watermarkViewController.m in Sources */,
 				75ACA2201CBE23C800550078 /* K_layer.m in Sources */,
+				75BF01521CE1AEA20062BF3C /* Kview.m in Sources */,
 				75ACA2041CBDF77400550078 /* main.m in Sources */,
 				7522D23E1CDC781400A056DE /* ChangeingViewController.m in Sources */,
 				75BF01461CE05C9C0062BF3C /* ProducePDFViewController.m in Sources */,
