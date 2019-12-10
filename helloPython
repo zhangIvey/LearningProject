@@ -1,0 +1,8 @@
+var name= "乔布斯";
+var sex="男"
+var age=60
+var company = "Applei.Inc"
+
+var info = [name,sec,age,company]
+
+print(info)
